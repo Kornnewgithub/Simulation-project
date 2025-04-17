@@ -1,0 +1,52 @@
+.parameterBox {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.parameterBox form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.parameterBox div {
+  font-weight: bold;
+}
+
+/* ปรับขนาดช่อง input */
+.parameterBox input {
+  width: 15%; /* กำหนดให้ช่อง input กว้างเต็ม container */
+  max-width: 300px; /* กำหนดความกว้างสูงสุด */
+  padding: 10px; /* เพิ่ม padding ภายในช่อง */
+  font-size: 16px; /* ปรับขนาดตัวอักษร */
+  border: 1px solid #007bff; /* สีเส้นขอบ */
+  border-radius: 5px; /* มุมโค้ง */
+  box-sizing: border-box; /* รวม padding และ border ในขนาด */
+  background-color: #3d81bd; /* สีพื้นหลัง */
+  color: #333; /* สีข้อความ */
+}
+
+/* เปลี่ยนสีเมื่อโฟกัส (focus) */
+.parameterBox input:focus {
+  background-color: #e6f7ff; /* สีพื้นหลังเมื่อโฟกัส */
+  border-color: #0056b3; /* สีเส้นขอบเมื่อโฟกัส */
+  outline: none; /* ลบเส้นขอบเริ่มต้น */
+}
+
+.parameterBox button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.parameterBox button:hover {
+  background-color: #0056b3;
+}
